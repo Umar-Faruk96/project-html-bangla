@@ -51,9 +51,22 @@
       <!-- HTML পরিচিতি সেকশন -->
       <section>
         <h1 lang="bn">এইচটিএমএল কি?</h1>
-        <blockquote>
-          <p lang="bn">মজিলা ডেভলপার নেটওয়ার্কের</p>
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">
+          <p>
+            <span lang="bn">মজিলা ডেভলপার নেটওয়ার্কের ভাষ্যমতে:</span><br>
+            <cite><q><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"><abbr title="Hypertext Markup Language">HTML</abbr></a> (Hypertext Markup Language) is a markup language that tells web browsers how to structure the web pages you visit</q></cite><br>
+          <span lang="bn">অর্থাৎ এইচটিএমএল যার পূর্ণাঙ্গ রূপ: <em lang="en-US">Hypertext Markup Language</em> একটি মার্কআপ ভাষা, কোন প্রোগ্রামিং ভাষা নয়। যা ব্রাউজারকে একটি ওয়েবপেজ ব্রাউজারে কিভাবে প্রদর্শন করতে হবে তার নির্দেশনা দেয়।</span>
+        </p>
         </blockquote>
+        <p lang="bn">মার্কআপ ভাষার সরল অর্থ: <sub>(এমনটা করতে পারি) </sub><q>যে ভাষাটি অনেকগুলো এলিমেন্টের সমন্বয়ে গঠিত। </q> একটি ওয়েবসাইট তৈরিতে দরকার এমন বিভিন্ন কাজের জন্য বিভিন্ন নামে এই এলিমেন্টগুলো <strong>প্রথম বন্ধনী <em>&lt; &gt;</em> বা থার্ড ব্রাকেটের ভেতর সমন্বিত থাকে।</strong> যা ব্রাউজারকে মার্ক বা চিহ্নিত করে দেয়, উদাহরণস্বরূপ: <strong><code>&lt;p&gt;</code> এলিমেন্টের জন্য <span lang="en-US">paragraph</span> জাতীয় আউটপুট ব্রাউজারে প্রদর্শন করতে হবে</strong>। ফলে আপনার ওয়েবসাইটটিতে যেকোন শিরোনাম, উপশিরোনাম, পরিচ্ছেদ, ছবি যোগ করা সহ এক ওয়েবপেজ  থেকে অন্য ওয়েবপেজে যাওয়ার জন্য লিংক করার কাজগুলো সুন্দর ও সহজভাবে করা যায়।</p>
+        <p lang="bn">যেমন: <q>বাংলাদেশ নদীমাতৃক দেশ</q> এই কথাটিকে ওয়েবপেজে দেখতে হলে ব্রাউজারকে <strong><code>&lt;p&gt;বাংলাদেশ নদীমাতৃক দেশ&lt;&sol;p&gt;</code></strong> এই মার্কআপটি ব্যবহারের মাধ্যমে নির্দেশনা দিতে হবে।</p>
+      </section>
+      
+      <!-- এইচটিএমএল এলিমেন্ট বিশ্লেষণ -->
+      <section>
+        <h2 lang="bn">এইচটিএমএল এলিমেন্ট বিশ্লেষণ</h2>
+        <p lang="bn"><strong><code>&lt;p&gt;বাংলাদেশ নদীমাতৃক দেশ&lt;&sol;p&gt;</code></strong> এটি একটি এইচটিএমএল প্যারাগ্রাফ এলিমেন্টের নমুনা। <abbr title="non-empty-element">শূণ্য নয় এমন প্রতিটি এলিমেন্টকে</abbr> এভাবেই লিখতে হবে। এর ভেতরে <strong><code>&lt;p&gt;</code></strong> অংশটুকুকে একটি এলিমেন্টের <em>ওপেনিং ট্যাগ</em> বলা হয়। আর <strong><code>&lt;&sol;p&gt;</code></strong> অংশটুকুকে <em>ক্লোজিং ট্যাগ</em> বলা হয়। এদুইয়ের ভেতরে থাকা <strong>বাংলাদেশ নদীমাতৃক দেশ</strong> অংশটুকুকে <em>কন্টেন্ট</em> বলা হয়। পুরো অংশটুকুকে <em>এলিমেন্ট</em> বলে। সুতরাং একটি এলিমেন্ট ওপেনিং ট্যাগ, তারপর কন্টেন্ট, তারপর ক্লোজিং ট্যাগ এভাবে ধারাবাহিকতা বজায় রেখে গঠিত হয়। এই ধারাবাহিকতা নষ্ট করা যাবেনা।</p>
+        <p lang="bn">এইচটিএমএল ট্যাগগুলো কেস-সেন্সিটিভ নয়। ফলে ওপেনিং ট্যাগ এবং ক্লোজিং ট্যাগের ভেতরে থাকা শব্দকে ইংরেজী বড় বা ছোট হাতের অক্ষরে লিখতে সমস্যা নেই। তবে ছোট হাতে লেখাটাই কাম্য এবং উত্তম।</p>
       </section>
     </article>
   </main>
