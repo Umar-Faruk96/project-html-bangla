@@ -227,7 +227,7 @@
             <dt>উদাহরণ:</dt>
             <dd><code>&lt;&excl;DOCTYPE html PUBLIC &quot;-&sol;&sol;W3C&sol;&sol; DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"></code></dd>
           </dl>
-          বর্তমানে যেকোন এইচটিএমএল ডকুমেন্টকে সঠিকভাবে কাজ করতে হলে প্রতিটি ফাইলের শুরুতে <code>DOCTYPE</code> থাকাটা জরুরী।
+          বর্তমানে যেকোন এইচটিএমএল ডকুমেন্টের সবকিছু সঠিকভাবে কাজে লাগাতে হলে প্রতিটি ফাইলের শুরুতে <code>DOCTYPE html</code> থাকাটা জরুরী।
           <dl>
             <dt>
               <code>&lt;html&gt;&lt;&sol;html&gt;&colon;</code>
@@ -238,9 +238,41 @@
             <dt>
               <code>&lt;head&gt;&lt;&sol;head&gt;&colon;</code>
             </dt>
-            <dd></dd>
+            <dd>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">হেড এলিমেন্ট</a>। এটি হেডিং ও হেডার এলিমেন্ট থেকে সম্পূর্ণ আলাদা। যে সকল অভ্যন্তরীন তথ্য একটি ওয়েবপেজের পাঠকের জন্য অপ্রয়োজনীয় ও অদৃশ্যমান হলেও একটি ওয়েবসাইটকে সুন্দর ও পূর্ণাঙ্গরূপে উপস্থাপন করতে প্রয়োজন, এই এলিমেন্টটি সে সকল তথ্য সংরক্ষণ ও উপস্থাপনের পাত্র হিসেবে কাজ করে। যেমন: সার্চ রেজাল্টে ভালো পারফর্ম করার জন্য কিওয়ার্ড, পেজ ডেসক্রিপশন যোগ করা, এক্সটারনাল স্টাইলশিট বা স্ক্রিপ্ট ফাইল লিংক করা, বুকমার্কিং সুবিধার জন্য পেজ টাইটেল যোগ করা ইত্যাদি।
+            </dd>
+            <dt>
+              <code>&lt;meta charset&equals;&quot;UTF-8&quot;&gt;&colon;</code>
+            </dt>
+            <dd>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">মেটা এলিমেন্ট</a>।
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base"><code>&lt;base&gt;</code></a>,
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link"><code>&lt;link&gt;</code></a>,
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script"><code>&lt;script&gt;</code></a>,
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style"><code>&lt;style&gt;</code></a> অথবা
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title"><code>&lt;title&gt;</code></a> ইত্যাদি, বিভিন্ন ধরণের মেটাডাটা ধারণ করতে সক্ষম এই এলিমেন্টগুলো যে সকল মেটাডাটা ধারণ করতে পারেনা, মেটা এলিমেন্ট সে সকল ডাটা ধারণ করে থাকে।
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-charset">
+                <code>charset </code>
+              </a>
+              মেটা এলিমেন্টের এই এট্রিবিউটটি পুরো ডকুমেন্টের ক্যারেক্টার সেট (কম্পিউটারে প্রদর্শনযোগ্য লিখিত অক্ষর রীতি) নির্ধারণ করে। এট্রিবিউট ভ্যালু হিসেবে
+              <code> UTF-8 </code> দেয়ার দ্বারা ডকুমেন্টটিকে পৃথিবীর প্রায় সকল ভাষার লেখা নির্ভুলভাবে উপস্থাপন করার সক্ষমতা দেয়া হয়েছে। এই ভ্যালু সেট করার মাধ্যমে ভবিষ্যতে এজাতীয় সমস্যা থেকে মুক্তি মিলবে।
+            </dd>
+            <dt>
+              <code>&lt;title&gt;&lt;&sol;title&gt;&colon;</code>
+            </dt>
+            <dd>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">টাইটেল এলিমেন্ট</a>। এটি ওয়েবপেজের টাইটেল হিসেবে ব্রাউজারের ট্যাবে প্রদর্শিত হয়। পেজ বুকমার্ক করার সময় এই টাইটেল বুকমার্ক টাইটেল হিসেবে ব্যবহৃত হয়।
+            </dd>
+            <dt>
+              <code>&lt;body&gt;&lt;&sol;body&gt;&colon;</code>
+            </dt>
+            <dd>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body">বডি এলিমেন্ট</a>। একটি ওয়েবপেজে যত রকম কন্টেন্ট দৃশ্যমান হয় তার সবটুকুই এই এলিমেন্টের ভেতর নেস্টিং করা হয়। যেমন: টেক্সট, ছবি, ভিডিও, অডিও, ম্যাপ ইত্যাদি।
+            </dd>
           </dl>
         </p>
+
+        <!-- হোয়াইট স্পেস বা সাদা জায়গা সম্পর্কে তথ্য -->
       </section>
     </article>
   </main>
