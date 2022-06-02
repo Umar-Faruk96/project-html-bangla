@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-Us">
+<html lang="bn">
 
 <head>
   <!-- for document encoding and device output -->
@@ -21,7 +21,7 @@
   <meta name="twitter:creator" content="Umar-Faruq-96">
 
   <!-- Page title added -->
-  <title lang="bn">এইচটিএমএল এর সূচনা এবং মেটাডাটা সম্পর্কে তথ্য</title>
+  <title>এইচটিএমএল এর সূচনা এবং মেটাডাটা সম্পর্কে তথ্য</title>
 
   <!-- Page font file links -->
   <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
@@ -37,10 +37,10 @@
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="text-fundamentals.html">Basics and Advanced Text Elements</a></li>
-        <li><a href="document-structure.html">Document and Linking Structure</a></li>
-        <li><a href="debug.html">HTML Debugging with Projects</a></li>
+        <li><a href="index.html" title="Home Page and html basic guide">Home</a></li>
+        <li><a href="text-fundamentals.html" title="html text guide">Basics and Advanced Text Elements</a></li>
+        <li><a href="document-structure.html" title="html page and link structure guide">Document and Linking Structure</a></li>
+        <li><a href="debug.html" title="html error debug guide and project tasks">HTML Debugging with Projects</a></li>
       </ul>
     </nav>
   </header><hr>
@@ -51,112 +51,183 @@
     <article>
       <!-- HTML পরিচিতি সেকশন -->
       <section>
-        <h1 lang="bn">এইচটিএমএল কি?</h1>
-        <blockquote cite="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">
+        <h1>এইচটিএমএল কি?</h1>
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" title="MDN web docs">
           <p>
             <dl>
               <dt>
-                <span lang="bn">মজিলা ডেভলপার নেটওয়ার্কের ভাষ্যমতে:</span>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" title="MDN html guide page">মজিলা ডেভলপার নেটওয়ার্কের ভাষ্যমতে:</a>
               </dt>
               <dd>
-                <cite><q><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"><abbr title="Hypertext Markup Language">HTML</abbr></a> (Hypertext Markup Language) is a markup language that tells web browsers how to structure the web pages you visit</q></cite>
+                <cite><q><abbr title="Hypertext Markup Language">HTML</abbr> (Hypertext Markup Language) is a markup language that tells web browsers how to structure the web pages you visit</q></cite>
               </dd>
+              <dd>
+                অর্থাৎ এইচটিএমএল যার পূর্ণাঙ্গ রূপ:
+                <strong lang="en-US">Hypertext Markup Language</strong> একটি মার্কআপ ভাষা, কোন প্রোগ্রামিং ভাষা নয়। যা ব্রাউজারকে একটি ওয়েবপেজ ব্রাউজারে কিভাবে প্রদর্শন করতে হবে তার নির্দেশনা দেয়।
+              </dd>
+            </dl>
+          </p>
+        </blockquote>
+        <p>
+          <dl>
+            <dt>মার্কআপ ভাষার সরল অর্থ
+              <sub>(এমনটা করতে পারি)</sub>:
+            </dt>
             <dd>
-              <span lang="bn">অর্থাৎ এইচটিএমএল যার পূর্ণাঙ্গ রূপ: <em lang="en-US">Hypertext Markup Language</em> একটি মার্কআপ ভাষা, কোন প্রোগ্রামিং ভাষা নয়। যা ব্রাউজারকে একটি ওয়েবপেজ ব্রাউজারে কিভাবে প্রদর্শন করতে হবে তার নির্দেশনা দেয়।</span>
+              <q>যে ভাষাটি অনেকগুলো এলিমেন্টের সমন্বয়ে গঠিত।</q> একটি ওয়েবসাইট তৈরিতে দরকার এমন বিভিন্ন কাজের জন্য বিভিন্ন নামে এই এলিমেন্টগুলো
+              <strong> প্রথম বন্ধনী
+                <em>
+                  <code>&lt; &gt;</code>
+                </em> বা ফার্স্ট ব্রাকেটের ভেতর সমন্বিত থাকে।
+              </strong> যা ব্রাউজারকে মার্ক বা চিহ্নিত করে দেয়, উদাহরণস্বরূপ:
+              <strong>
+                <code>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank" title="MDN paragraph element reference">
+                    <code>&lt;p&gt;</code>
+                  </a>
+                </code> এলিমেন্টের জন্য
+                <span lang="en-US">paragraph</span> জাতীয় আউটপুট ব্রাউজারে প্রদর্শন করতে হবে
+              </strong>।
             </dd>
           </dl>
+          ফলে আপনার ওয়েবসাইটটিতে যেকোন শিরোনাম, উপশিরোনাম, পরিচ্ছেদ, ছবি যোগ করা সহ এক ওয়েবপেজ  থেকে অন্য ওয়েবপেজে যাওয়ার জন্য লিংক করার কাজগুলো সুন্দর ও সহজভাবে করা যায়।
         </p>
-        </blockquote>
-        <p lang="bn">
-          <dl>
-            <dt>মার্কআপ ভাষার সরল অর্থ:
-          <sub>(এমনটা করতে পারি) </sub></dt>
-          <dd>
-            <q>যে ভাষাটি অনেকগুলো এলিমেন্টের সমন্বয়ে গঠিত।</q> একটি ওয়েবসাইট তৈরিতে দরকার এমন বিভিন্ন কাজের জন্য বিভিন্ন নামে এই এলিমেন্টগুলো
-          <strong> প্রথম বন্ধনী <em><code>&lt; &gt;</code></em> বা থার্ড ব্রাকেটের ভেতর সমন্বিত থাকে।</strong> যা ব্রাউজারকে মার্ক বা চিহ্নিত করে দেয়, উদাহরণস্বরূপ:
-          <strong><code><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank"><code>&lt;p&gt;</code></a></code> এলিমেন্টের জন্য
-            <span lang="en-US">paragraph</span> জাতীয় আউটপুট ব্রাউজারে প্রদর্শন করতে হবে</strong>।</dd>
-          </dl>
-            ফলে আপনার ওয়েবসাইটটিতে যেকোন শিরোনাম, উপশিরোনাম, পরিচ্ছেদ, ছবি যোগ করা সহ এক ওয়েবপেজ  থেকে অন্য ওয়েবপেজে যাওয়ার জন্য লিংক করার কাজগুলো সুন্দর ও সহজভাবে করা যায়।</p>
-        <p lang="bn">যেমন:
+        <p>যেমন:
           <q>বাংলাদেশ নদীমাতৃক দেশ</q> এই কথাটিকে ওয়েবপেজে দেখতে হলে ব্রাউজারকে
-          <strong><code>&lt;p&gt;</code>বাংলাদেশ নদীমাতৃক দেশ<code>&lt;&sol;p&gt;</code></strong>
-          এই মার্কআপটি ব্যবহারের মাধ্যমে নির্দেশনা দিতে হবে।</p><hr>
+          <strong>
+            <code>&lt;p&gt;</code>বাংলাদেশ নদীমাতৃক দেশ
+            <code>&lt;&sol;p&gt;</code>
+          </strong>
+          এই মার্কআপটি ব্যবহারের মাধ্যমে নির্দেশনা দিতে হবে।
+        </p>
+        <hr>
       </section>
       
       <!-- এইচটিএমএল এলিমেন্ট বিশ্লেষণ -->
       <section>
-        <h2 lang="bn">এইচটিএমএল এলিমেন্ট বিশ্লেষণ</h2>
-        <p lang="bn">
-          <strong><code>&lt;p&gt;</code>বাংলাদেশ নদীমাতৃক দেশ<code>&lt;&sol;p&gt;</code></strong>
+        <h2>এইচটিএমএল এলিমেন্ট বিশ্লেষণ</h2>
+        <p>
+          <strong>
+            <code>&lt;p&gt;</code>বাংলাদেশ নদীমাতৃক দেশ
+            <code>&lt;&sol;p&gt;</code>
+          </strong>
           এটি একটি এইচটিএমএল প্যারাগ্রাফ এলিমেন্টের নমুনা।
           <abbr title="non-empty-element">শূণ্য নয় এমন প্রতিটি এলিমেন্টকে</abbr> এভাবেই লিখতে হবে। এর ভেতরে
-          <strong><code>&lt;p&gt;</code></strong>
-          অংশটুকুকে একটি এলিমেন্টের <em>ওপেনিং ট্যাগ</em> বলা হয়। আর <strong><code>&lt;&sol;p&gt;</code></strong>
-          অংশটুকুকে <em>ক্লোজিং ট্যাগ</em> বলা হয়। এদুইয়ের ভেতরে থাকা <strong>বাংলাদেশ নদীমাতৃক দেশ</strong>
-          অংশটুকুকে <em>কন্টেন্ট</em> বলা হয়। পুরো অংশটুকুকে <em>এলিমেন্ট</em> বলে। সুতরাং একটি এলিমেন্ট ওপেনিং ট্যাগ, তারপর কন্টেন্ট, তারপর ক্লোজিং ট্যাগ এভাবে ধারাবাহিকতা বজায় রেখে গঠিত হয়। এই ধারাবাহিকতা নষ্ট করা যাবেনা।</p>
-        <p lang="bn">এইচটিএমএল ট্যাগগুলো কেস-সেন্সিটিভ নয়। ফলে ওপেনিং ট্যাগ এবং ক্লোজিং ট্যাগের ভেতরে থাকা শব্দকে ইংরেজী বড় বা ছোট হাতের অক্ষরে লিখতে সমস্যা নেই। তবে ছোট হাতে লেখাটাই কাম্য এবং উত্তম।</p><hr>
+          <strong>
+            <code>&lt;p&gt;</code>
+          </strong>
+          অংশটুকুকে একটি এলিমেন্টের
+          <em>ওপেনিং ট্যাগ</em> বলা হয়। আরেকটি
+          <strong>
+            <code>&lt;&sol;p&gt;</code>
+          </strong>
+          অংশটুকুকে
+          <em>ক্লোজিং ট্যাগ</em> বলা হয়। এদুইয়ের ভেতরে থাকা <strong>বাংলাদেশ নদীমাতৃক দেশ</strong>
+          অংশটুকুকে
+          <em>কন্টেন্ট</em> বলা হয়। পুরো অংশটুকুকে
+          <em>এলিমেন্ট</em> বলে। সুতরাং একটি এলিমেন্ট ওপেনিং ট্যাগ, তারপর কন্টেন্ট, তারপর ক্লোজিং ট্যাগ এভাবে ধারাবাহিকতা বজায় রেখে গঠিত হয়। এই ধারাবাহিকতা নষ্ট করা যাবেনা।
+        </p>
+        <p>
+          এইচটিএমএল ট্যাগগুলো কেস-সেন্সিটিভ নয়। ফলে ওপেনিং ট্যাগ এবং ক্লোজিং ট্যাগের ভেতরে থাকা শব্দকে ইংরেজী বড় বা ছোট হাতের অক্ষরে লিখতে সমস্যা নেই। তবে ছোট হাতে লেখাটাই কাম্য এবং উত্তম।
+        </p>
+        <hr>
       </section>
 
       <!-- যথাযথ এলিমেন্ট নেস্টিং এর প্রক্রিয়া -->
       <section>
-        <h3 lang="bn">এলিমেন্ট নেস্টিংয়ের প্রক্রিয়া</h3>
-        <p lang="bn">এইচটিএমএল এলিমেন্টকে অন্য আরেকটি এলিমেন্টের ভেতরে রাখাকে নেস্টিং বলে। অর্থাৎ একটি এলিমেন্টের কন্টেন্ট অংশে অন্য আরেকটি এলিমেন্ট লেখা যেতে পারে। একেই এলিমেন্ট নেস্টিং বলে। তবে যথাযথ এবং সঠিক উপায়ে নেস্টিং করাটা বাধ্যতামূলক। ভুল পন্থায় নেস্টিং করলে কাঙ্ক্ষিত আউটপুট এর বদলে ভুল আউটপুট প্রদর্শিত হবে। ভুল পন্থায় নেস্টিংয়ের ক্ষেত্রে ব্রাউজার সাধারণত কোন ইরোর বা ভুল মেসেজ প্রদর্শন করেনা। ফলে ভুলটা কোথায় তা বুঝতে হলে নিজে থেকে
-          <a href="debug.html" target="_blank">কোড ডিবাগ</a>
-          করতে হবে।</p>
-        <p lang="bn">
+        <h3>এলিমেন্ট নেস্টিংয়ের প্রক্রিয়া</h3>
+        <p>
+          এইচটিএমএল এলিমেন্টকে অন্য আরেকটি এলিমেন্টের ভেতরে রাখাকে নেস্টিং বলে। অর্থাৎ একটি এলিমেন্টের কন্টেন্ট অংশে অন্য আরেকটি এলিমেন্ট লেখা যেতে পারে। একেই এলিমেন্ট নেস্টিং বলে। তবে যথাযথ এবং সঠিক উপায়ে নেস্টিং করাটা বাধ্যতামূলক। ভুল পন্থায় নেস্টিং করলে কাঙ্ক্ষিত আউটপুট এর বদলে ভুল আউটপুট প্রদর্শিত হবে। ভুল পন্থায় নেস্টিংয়ের ক্ষেত্রে ব্রাউজার সাধারণত কোন ইরোর বা ভুল মেসেজ প্রদর্শন করেনা। ফলে ভুলটা কোথায় তা বুঝতে হলে নিজে থেকে
+          <a href="debug.html" target="_blank" title="html error debug guide and project tasks">কোড ডিবাগ</a>
+          করতে হবে।
+        </p>
+        <p>
           <dl>
             <dt>নেস্টিংয়ের সঠিক প্রক্রিয়া:</dt>
-            <dd><em><code>&lt;p&gt;</code>বাংলাদেশ<code>&lt;strong&gt;</code>নদীমাতৃক<code>&lt;&sol;strong&gt;</code>দেশ<code>&lt;&sol;p&gt;</code></em></dd>
+            <dd>
+              <em>
+                <code>&lt;p&gt;</code>বাংলাদেশ
+                <code>&lt;strong&gt;</code>নদীমাতৃক
+                <code>&lt;&sol;strong&gt;</code>দেশ
+                <code>&lt;&sol;p&gt;</code>
+              </em>
+            </dd>
             <dt>ব্রাউজারে আউটপুট:</dt>
-            <dd>বাংলাদেশ <strong>নদীমাতৃক</strong> দেশ</dd>
+            <dd>বাংলাদেশ
+              <strong>নদীমাতৃক</strong> দেশ
+            </dd>
           </dl>
         </p>
-        <p lang="bn">
+        <p>
           <dl>
             <dt>নেস্টিংয়ের ভুলপ্রক্রিয়া:</dt>
-            <dd><em><code>&lt;p&gt;</code>বাংলাদেশ<code>&lt;strong&gt;</code>নদীমাতৃক<code>&lt;&sol;p&gt;</code>দেশ<code>&lt;&sol;strong&gt;</code></em></dd>
+            <dd>
+              <em>
+                <code>&lt;p&gt;</code>বাংলাদেশ
+                <code>&lt;strong&gt;</code>নদীমাতৃক
+                <code>&lt;&sol;p&gt;</code>দেশ
+                <code>&lt;&sol;strong&gt;</code>
+              </em>
+            </dd>
           </dl>
-          তথা যথাযথ নেস্টিংয়ের ক্ষেত্রে একটি এলিমেন্টের ওপেনিং এবং ক্লোজিং ট্যাগকে অপর এলিমেন্টের পুরোপুরি ভেতরে রাখতে হবে। ওপেনিং ট্যাগ ভেতরে, ক্লোজিং ট্যাগ বাইরে বা এর বিপরীত করা যাবেনা।</p><hr>
+          তথা যথাযথ নেস্টিংয়ের ক্ষেত্রে একটি এলিমেন্টের ওপেনিং এবং ক্লোজিং ট্যাগকে অপর এলিমেন্টের পুরোপুরি ভেতরে রাখতে হবে। ওপেনিং ট্যাগ ভেতরে, ক্লোজিং ট্যাগ বাইরে বা এর বিপরীত করা যাবেনা।
+        </p>
+        <hr>
       </section>
 
       <!-- এইচটিএমএল এলিমেন্ট ক্যাটাগরি পরিচিতি -->
       <section>
-        <h4 lang="bn">এইচটিএমএল এলিমেন্ট ক্যাটাগরি পরিচিতি</h4>
-        <p lang="bn">এইচটিএমএল ৫ এর পূর্বে এইচটিএমএল এলিমেন্টগুলোকে সাধারণত দুটি ক্যাটাগরিতে বিভক্ত করা হত।
-        <ol>
-          <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">ব্লক লেভেল এলিমেন্ট</a>
-          </li>
-          <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank">ইনলাইন এলিমেন্ট</a>
-          </li>
-        </ol>
-      যা তুলনামূলক সহজে বোধগম্য। এইচটিএমএল ৫ এখন <a href="https://html.spec.whatwg.org/multipage/indices.html#element-content-categories">কন্টেন্ট টাইপের ভিত্তিতে এলিমেন্টগুলোর ক্যাটাগরি</a> করেছে।
-      </p>
+        <h4>এইচটিএমএল এলিমেন্ট ক্যাটাগরি পরিচিতি</h4>
+        <p>
+          এইচটিএমএল ৫ এর পূর্বে এইচটিএমএল এলিমেন্টগুলোকে সাধারণত দুটি ক্যাটাগরিতে বিভক্ত করা হত।
+          <ol>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank" title="block level element reference">ব্লক লেভেল এলিমেন্ট</a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank" title="inline element reference">ইনলাইন এলিমেন্ট</a>
+            </li>
+          </ol>
+          যা তুলনামূলক সহজে বোধগম্য। এইচটিএমএল ৫ এখন
+          <a href="https://html.spec.whatwg.org/multipage/indices.html#element-content-categories" title="web hypertext application technology working group's content category reference">কন্টেন্ট টাইপ বিবেচনায় এলিমেন্ট ক্যাটাগরি</a> নির্বাচন করেছে।
+        </p>
         <p>
           <dl>
             <dt>ব্লক লেভেল এলিমেন্ট:</dt>
-            <dd>ব্লক লেভেল এলিমেন্টগুলো ওয়েবপেজে ব্লক আকারে একটি নির্দিষ্ট পরিমাণ জায়গা দখল করে। এই এলিমেন্টগুলো তার পূর্বের ও পরের এলিমেন্টের কন্টেন্ট থেকে সম্পূর্ণ আলাদা ও স্বতন্ত্ররূপে একটি নতুন লাইনে ওয়েবপেজে প্রদর্শিত হয়। সাধারণত এই জাতীয় এলিমেন্টগুলো ওয়েবপেজের গঠন ও অবকাঠামো তৈরিতে ব্যবহৃত হয়।</dd>
+            <dd>
+              ব্লক লেভেল এলিমেন্টগুলো ওয়েবপেজে ব্লক আকারে একটি নির্দিষ্ট পরিমাণ জায়গা দখল করে। এই এলিমেন্টগুলো তার পূর্বের ও পরের এলিমেন্টের কন্টেন্ট থেকে সম্পূর্ণ আলাদা ও স্বতন্ত্ররূপে একটি নতুন লাইনে ওয়েবপেজে প্রদর্শিত হয়। সাধারণত এই জাতীয় এলিমেন্টগুলো ওয়েবপেজের গঠন ও অবকাঠামো তৈরিতে ব্যবহৃত হয়।
+            </dd>
             <dt>ব্লক লেভেল এলিমেন্টের  উদাহরণ:</dt>
-            <dd>হেডিং এলিমেন্ট, প্যারাগ্রাফ এলিমেন্ট, লিস্ট, হেডার, ফুটার ইত্যাদি এলিমেন্ট।</dd>
+            <dd>
+              হেডিং এলিমেন্ট, প্যারাগ্রাফ এলিমেন্ট, লিস্ট, হেডার, ফুটার ইত্যাদি এলিমেন্ট।
+            </dd>
           </dl>
           মনে রাখতে হবে, ব্লক লেভেল এলিমেন্টকে ইনলাইন এলিমেন্টের ভেতরে নেস্টিং করা যাবেনা।
         </p>
         <p>
           <dt>ইনলাইন এলিমেন্ট:</dt>
-          <dd>ইনলাইন এলিমেন্টগুলোকে ব্লক লেভেল এলিমেন্টের ভেতরে নেস্টিং করা হয়। এই এলিমেন্টগুলো সাধারণত টেক্সট বা লেখা জাতীয় কন্টেন্টকে বিভিন্ন অর্থে বা রূপে উপস্থাপন করার জন্য ব্যবহৃত হয়। যেমন:
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank"><code>&lt;a&gt;</code></a>
+          <dd>
+            ইনলাইন এলিমেন্টগুলোকে ব্লক লেভেল এলিমেন্টের ভেতরে নেস্টিং করা হয়। এই এলিমেন্টগুলো সাধারণত টেক্সট বা লেখা জাতীয় কন্টেন্টকে বিভিন্ন অর্থে বা রূপে উপস্থাপন করার জন্য ব্যবহৃত হয়। যেমন:
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank" title="MDN a element reference">
+              <code>&lt;a&gt;</code>
+            </a>
             এলিমেন্টটি টেক্সটের কোন অংশকে লিংকে রূপান্তর করতে ব্যবহৃত হয়। তেমনিভাবে
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank"><code>&lt;em&gt;</code></a>,
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank"><code>&lt;strong&gt;</code></a>
-            এলিমেন্ট দুটি লেখার কোন অংশকে গুরুত্ব প্রদান করতে ব্যবহৃত হয়।</dd>
-        </p><hr>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank" title="MDN em elemnt reference">
+              <code>&lt;em&gt;</code>
+            </a>,
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank" title="MDN strong element reference">
+              <code>&lt;strong&gt;</code>
+            </a>
+            এলিমেন্ট দুটি লেখার কোন অংশকে গুরুত্ব প্রদান করতে ব্যবহৃত হয়।
+          </dd>
+        </p>
+        <hr>
       </section>
 
       <!-- empty and non-empty element -->
       <h4>শূণ্য (এম্পটি) ও শূণ্য নয় (নন-এম্পটি) এলিমেন্ট পরিচিতি</h4>
-      <p>ইতিপূর্বে প্রসঙ্গক্রমে নন-এম্পটি এলিমেন্টের কথা এসেছে। এদের পরিচিতিও বেশ সহজ।
+      <p>
+        ইতিপূর্বে প্রসঙ্গক্রমে নন-এম্পটি এলিমেন্টের কথা এসেছে। এদের পরিচিতিও বেশ সহজ।
         <dl>
           <dt>নন-এম্পটি এলিমেন্ট:</dt>
           <dd>যে এলিমেন্টের ওপেনিং এবং ক্লোজিং ট্যাগ থাকে।</dd>
@@ -164,10 +235,17 @@
           <dd>যার ওপেনিং ট্যাগ থাকলেও ক্লোজিং ট্যাগ থাকে না।</dd>
         </dl>
         ওয়েবপেজে বাইরের কোন কন্টেন্টকে স্থাপন করতে সাধারণত এম্পটি এলিমেন্ট ব্যবহার করা হয়। যেমন:
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank"><code>&lt;img&gt;</code></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank" title="MDN img element reference">
+          <code>&lt;img&gt;</code>
+        </a>
         এলিমেন্ট ওয়েবপেজে কোন ছবি স্থাপনে ব্যবহৃত হয়। এম্পটি এলিমেন্টকে ভয়েড এলিমেন্টও বলা হয়। এক্সএমএল ছাড়া সাধারণত এম্পটি এলিমেন্টের শেষে &sol; বা ফরওয়ার্ড স্ল্যাশ দেয়ার প্রয়োজন নেই। যেমন:
-        <code>&lt;img src&equals;&quot;img/favicon.ico&quot; alt&equals;&quot;favicon&quot; <b><s style="color: red;">&sol;</s></b>&gt;</code>
-      </p><hr>
+        <code>&lt;img src&equals;&quot;img/favicon.ico&quot; alt&equals;&quot;favicon&quot;
+          <b>
+            <s style="color: red;">&sol;</s>
+          </b>&gt;
+        </code>
+      </p>
+      <hr>
     </article>
 
     <!-- Article about Attributes -->
@@ -175,14 +253,19 @@
       <!-- এট্রিবিউট পরিচিতি সেকশন -->
       <section>
         <h2>এট্রিবিউট পরিচিতি:</h2>
-        <p>এলিমেন্ট সম্পর্কে অতিরিক্ত তথ্য <em>-যা মূল পেজে প্রদর্শিত হয়না-</em> ধারণ করতে এইচটিএমএল এলিমেন্টগুলো এট্রিবিউট ব্যবহার করে।
+        <p>
+          এলিমেন্ট সম্পর্কে অতিরিক্ত তথ্য
+          <em>-যা মূল পেজে প্রদর্শিত হয়না-</em> ধারণ করতে এইচটিএমএল এলিমেন্টগুলো এট্রিবিউট ব্যবহার করে।
           <dl>
             <dt>এট্রিবিউট উদাহরণ:</dt>
             <dd>
-              <code>&lt;p lang&equals;&quot;bn&quot;&gt;</code>বাংলাদেশ নদীমাতৃক দেশ<code>&lt;&sol;p&gt;</code>
+              <code>&lt;p lang&equals;&quot;bn&quot;&gt;</code>বাংলাদেশ নদীমাতৃক দেশ
+              <code>&lt;&sol;p&gt;</code>
             </dd>
           </dl>
-          এখানে <code>lang</code> এট্রিবিউটটি <code>p</code> এলিমেন্টের কন্টেন্ট ভাষা বাংলা তা জানান দেয়।
+          এখানে
+          <code>lang</code> এট্রিবিউটটি
+          <code>p</code> এলিমেন্টের কন্টেন্ট ভাষা বাংলা তা জানান দেয়।
         </p>
         <p>অতএব,
           <ul>
@@ -193,16 +276,23 @@
             <li>এট্রিবিউট ভ্যালুর দুপাশে উদ্বৃতি চিহ্ন একটি উর্ধ্বকমা
               <code>&apos; &apos;</code> বা দুটি উর্ধ্বকমা
               <code>&quot; &quot;</code>, উভয়রূপেই দেয়া যেতে পারে। তবে একপাশে একটি উর্ধ্বকমা এবং অন্যপাশে দুটি উর্ধ্বকমা বা এর বিপরীত তথা
-              <code style="display: block;"><b>&apos; &quot;</b></code>
+              <code style="display: block;">
+                <e>&apos; &quot;</e>
+              </code>
               অথবা
-              <code style="display: block;"><b>&quot; &apos;</b></code>
+              <code style="display: block;">
+                <e>&quot; &apos;</e>
+              </code>
               এভাবে মিক্স করে লেখা যাবেনা। অবশ্য একটি উর্ধ্বকমার ভেতরে দুটি উর্ধ্বকমা নেস্টিং করা যাবে। যেমন:
-              <code style="display: block;">&lt;a href&equals;&quot;https&colon;&sol;&sol;www.example.com&quot; title&equals;<u>&quot;Isn&apos;t this fun?&quot;</u>&gt;A link to my example.&lt;&sol;a&gt;</code>
+              <code style="display: block;">
+                &lt;a href&equals;&quot;https&colon;&sol;&sol;www.example.com&quot; title&equals;<em>&quot;Isn&apos;t this fun?&quot;</em>&gt;A link to my example.&lt;&sol;a&gt;
+              </code>
               অথবা
-              <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#entity_references_including_special_characters_in_html">এইচটিএমএল এন্টিন্টি ক্যারেক্টার কোড</a> দিয়েও লেখা যাবে।
+              <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#entity_references_including_special_characters_in_html" title="MDN entity reference">এইচটিএমএল এন্টিন্টি ক্যারেক্টার কোড</a> দিয়েও লেখা যাবে।
             </li>
           </ul>
-        </p><hr>
+        </p>
+        <hr>
       </section>
     </article>
 
@@ -223,9 +313,13 @@
             <dt>
               <code>&lt;&excl;DOCTYPE html&gt;&colon;</code>
             </dt>
-            <dd>প্রতিটি এইচটিএমএল ফাইলের সূচনা এই লাইনটি দিয়ে হয়। প্রতিটি এইচটিএমএল ফাইলকে ডকুমেন্টও বলা হয়। ফলে এই লাইনটি <code>DOCTYPE</code> তথা ডকুমেন্ট টাইপ নির্দেশ করে। এইচটিএমএলের সূচনালগ্নে তথা ১৯৯১-১৯৯২ এর দিকে কোন এইচটিএমএল কোড ভালমানের বিবেচিত হতে <code>DOCTYPE</code> ডিক্লারেশন বা ঘোষণার মাধ্যমে সকল নিয়মকানুন অনুসরণ করত। </dd>
+            <dd>
+              প্রতিটি এইচটিএমএল ফাইলের সূচনা এই লাইনটি দিয়ে হয়। প্রতিটি এইচটিএমএল ফাইলকে ডকুমেন্টও বলা হয়। ফলে এই লাইনটি <code>DOCTYPE</code> তথা ডকুমেন্ট টাইপ নির্দেশ করে। এইচটিএমএলের সূচনালগ্নে তথা ১৯৯১-১৯৯২ এর দিকে কোন এইচটিএমএল কোড ভালমানের বিবেচিত হতে <code>DOCTYPE</code> ডিক্লারেশন বা ঘোষণার মাধ্যমে সকল নিয়মকানুন অনুসরণ করত।
+            </dd>
             <dt>উদাহরণ:</dt>
-            <dd><code>&lt;&excl;DOCTYPE html PUBLIC &quot;-&sol;&sol;W3C&sol;&sol; DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"></code></dd>
+            <dd>
+              <code>&lt;&excl;DOCTYPE html PUBLIC &quot;-&sol;&sol;W3C&sol;&sol; DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"></code>
+            </dd>
           </dl>
           বর্তমানে যেকোন এইচটিএমএল ডকুমেন্টের সবকিছু সঠিকভাবে কাজে লাগাতে হলে প্রতিটি ফাইলের শুরুতে <code>DOCTYPE html</code> থাকাটা জরুরী।
           <dl>
@@ -233,25 +327,34 @@
               <code>&lt;html&gt;&lt;&sol;html&gt;&colon;</code>
             </dt>
             <dd>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank">এইচটিএমএল বা রুট এলিমেন্ট</a>। এই এলিমেন্টটি একটি এইচটিএমএল পেজে একবারই লিখতে হয়। পেজের সকল কন্টেন্ট এর ভেতরে নেস্টিং করা থাকে।
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank" title="MDN html element reference">এইচটিএমএল বা রুট এলিমেন্ট</a>। এই এলিমেন্টটি একটি এইচটিএমএল পেজে একবারই লিখতে হয়। পেজের সকল কন্টেন্ট এর ভেতরে নেস্টিং করা থাকে।
             </dd>
             <dt>
               <code>&lt;head&gt;&lt;&sol;head&gt;&colon;</code>
             </dt>
             <dd>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">হেড এলিমেন্ট</a>। এটি হেডিং ও হেডার এলিমেন্ট থেকে সম্পূর্ণ আলাদা। যে সকল অভ্যন্তরীন তথ্য একটি ওয়েবপেজের পাঠকের জন্য অপ্রয়োজনীয় ও অদৃশ্যমান হলেও একটি ওয়েবসাইটকে সুন্দর ও পূর্ণাঙ্গরূপে উপস্থাপন করতে প্রয়োজন, এই এলিমেন্টটি সে সকল তথ্য সংরক্ষণ ও উপস্থাপনের পাত্র হিসেবে কাজ করে। যেমন: সার্চ রেজাল্টে ভালো পারফর্ম করার জন্য কিওয়ার্ড, পেজ ডেসক্রিপশন যোগ করা, এক্সটারনাল স্টাইলশিট বা স্ক্রিপ্ট ফাইল লিংক করা, বুকমার্কিং সুবিধার জন্য পেজ টাইটেল যোগ করা ইত্যাদি।
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" title="MDN head element reference">হেড এলিমেন্ট</a>। এটি হেডিং ও হেডার এলিমেন্ট থেকে সম্পূর্ণ আলাদা। যে সকল অভ্যন্তরীন তথ্য একটি ওয়েবপেজের পাঠকের জন্য অপ্রয়োজনীয় ও অদৃশ্যমান হলেও একটি ওয়েবসাইটকে সুন্দর ও পূর্ণাঙ্গরূপে উপস্থাপন করতে প্রয়োজন, এই এলিমেন্টটি সে সকল তথ্য সংরক্ষণ ও উপস্থাপনের পাত্র হিসেবে কাজ করে। যেমন: সার্চ রেজাল্টে ভালো পারফর্ম করার জন্য কিওয়ার্ড, পেজ ডেসক্রিপশন যোগ করা, এক্সটারনাল স্টাইলশিট বা স্ক্রিপ্ট ফাইল লিংক করা, বুকমার্কিং সুবিধার জন্য পেজ টাইটেল যোগ করা ইত্যাদি।
             </dd>
             <dt>
               <code>&lt;meta charset&equals;&quot;UTF-8&quot;&gt;&colon;</code>
             </dt>
             <dd>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">মেটা এলিমেন্ট</a>।
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base"><code>&lt;base&gt;</code></a>,
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link"><code>&lt;link&gt;</code></a>,
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script"><code>&lt;script&gt;</code></a>,
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style"><code>&lt;style&gt;</code></a> অথবা
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title"><code>&lt;title&gt;</code></a> ইত্যাদি, বিভিন্ন ধরণের মেটাডাটা ধারণ করতে সক্ষম এই এলিমেন্টগুলো যে সকল মেটাডাটা ধারণ করতে পারেনা, মেটা এলিমেন্ট সে সকল ডাটা ধারণ করে থাকে।
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-charset">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" title="MDN meta element reference">মেটা এলিমেন্ট</a>।
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base" title="MDN base element reference">
+                <code>&lt;base&gt;</code></a>,
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" title="MDN link element reference">
+                <code>&lt;link&gt;</code>
+              </a>,
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" title="MDN script element reference">
+                <code>&lt;script&gt;</code>
+              </a>,
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" title="MDN style element reference">
+                <code>&lt;style&gt;</code>
+              </a> অথবা
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" title="MDN title element reference">
+                <code>&lt;title&gt;</code>
+              </a> ইত্যাদি, বিভিন্ন ধরণের মেটাডাটা ধারণ করতে সক্ষম এই এলিমেন্টগুলো যে সকল মেটাডাটা ধারণ করতে পারেনা, মেটা এলিমেন্ট সে সকল ডাটা ধারণ করে থাকে।
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-charset" title="MDN character set attribute reference">
                 <code>charset </code>
               </a>
               মেটা এলিমেন্টের এই এট্রিবিউটটি পুরো ডকুমেন্টের ক্যারেক্টার সেট (কম্পিউটারে প্রদর্শনযোগ্য লিখিত অক্ষর রীতি) নির্ধারণ করে। এট্রিবিউট ভ্যালু হিসেবে
@@ -261,68 +364,85 @@
               <code>&lt;title&gt;&lt;&sol;title&gt;&colon;</code>
             </dt>
             <dd>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">টাইটেল এলিমেন্ট</a>। এটি ওয়েবপেজের টাইটেল হিসেবে ব্রাউজারের ট্যাবে প্রদর্শিত হয়। পেজ বুকমার্ক করার সময় এই টাইটেল বুকমার্ক টাইটেল হিসেবে ব্যবহৃত হয়।
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" title="MDN title element reference">টাইটেল এলিমেন্ট</a>। এটি ওয়েবপেজের টাইটেল হিসেবে ব্রাউজারের ট্যাবে প্রদর্শিত হয়। পেজ বুকমার্ক করার সময় এই টাইটেল বুকমার্ক টাইটেল হিসেবে ব্যবহৃত হয়।
             </dd>
             <dt>
               <code>&lt;body&gt;&lt;&sol;body&gt;&colon;</code>
             </dt>
             <dd>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body">বডি এলিমেন্ট</a>। একটি ওয়েবপেজে যত রকম কন্টেন্ট দৃশ্যমান হয় তার সবটুকুই এই এলিমেন্টের ভেতর নেস্টিং করা হয়। যেমন: টেক্সট, ছবি, ভিডিও, অডিও, ম্যাপ ইত্যাদি।
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" title="MDN body element reference">বডি এলিমেন্ট</a>। একটি ওয়েবপেজে যত রকম কন্টেন্ট দৃশ্যমান হয় তার সবটুকুই এই এলিমেন্টের ভেতর নেস্টিং করা হয়। যেমন: টেক্সট, ছবি, ভিডিও, অডিও, ম্যাপ ইত্যাদি।
             </dd>
           </dl>
         </p>
-      </section><hr>
+        <hr>
+      </section>
 
       <!-- হোয়াইট স্পেস বা সাদা জায়গা সম্পর্কে তথ্য -->
       <section>
         <h3>এইচটিএমএলে একাধিক হোয়াইট স্পেস প্রদান</h3>
-        <p>একটি এইচটিএমএল ফাইলে টেক্সট লেখার সময় দেখার সুবিধার জন্য এন্টার বা ট্যাব কি চেপে একাধিক হোয়াইট স্পেস দেয়া যেতে পারে। তবে এইচটিএমএল
-          <em> পার্সার (এইচটিএমএল কোডকে মেশিনের বোধগম্য ভাষায় রূপান্তরকারক)</em> সব হোয়াইট স্পেসকে একটিমাত্র স্পেস হিসেবে গণনা করে। তবে কোড লেখার সময় অন্যদের পড়ার সুবিধার্থে স্পেস এবং ইন্ডেন্টেশনের মাধ্যমে টেক্সট ফাইলকে সহজে পাঠযোগ্য করার চেষ্টা করতে হবে। এইচটিএমএল ফাইলে একাধিক স্পেস আউটপুট হিসেবে একান্তই পেতে হলে পরবর্তী সেকশনে এন্টিন্টি রেফারেন্স দেখা যেতে পারে।
+        <p>
+          একটি এইচটিএমএল ফাইলে টেক্সট লেখার সময় দেখার সুবিধার জন্য এন্টার বা ট্যাব কি চেপে একাধিক হোয়াইট স্পেস দেয়া যেতে পারে। তবে এইচটিএমএল<em> পার্সার (এইচটিএমএল কোডকে মেশিনের বোধগম্য ভাষায় রূপান্তরকারক)</em> সব হোয়াইট স্পেসকে একটিমাত্র স্পেস হিসেবে গণনা করে। তবে কোড লেখার সময় অন্যদের পড়ার সুবিধার্থে স্পেস এবং ইন্ডেন্টেশনের মাধ্যমে টেক্সট ফাইলকে সহজে পাঠযোগ্য করার চেষ্টা করতে হবে। এইচটিএমএল ফাইলে একাধিক স্পেস আউটপুট হিসেবে একান্তই পেতে হলে পরবর্তী সেকশনে এন্টিন্টি রেফারেন্স দেখা যেতে পারে।
         </p>
-      </section><hr>
+        <hr>
+      </section>
 
       <!-- এন্টিটি রেফারেন্স ও স্পেশ্যাল ক্যারেক্টার সেকশন -->
       <section>
         <h3>এইচটিএমএল এন্টিটি রেফারেন্স</h3>
-        <p>এইচটিএমএলে বেশ কিছু ক্যারেক্টার রিজার্ভ বা পূর্ব থেকেই সংরক্ষিত হয়ে আছে। যেগুলো সাধারণ ক্যারেক্টার হিসেবে লিখলেও তার আউটপুট পাওয়া যাবেনা। যেমন:
-          <code>&lt;, &gt;, &quot;, &apos;, &amp;</code>
+        <p>
+          এইচটিএমএলে বেশ কিছু ক্যারেক্টার রিজার্ভ বা পূর্ব থেকেই সংরক্ষিত হয়ে আছে। যেগুলো সাধারণ ক্যারেক্টার হিসেবে লিখলেও তার আউটপুট পাওয়া যাবেনা। যেমন: <code>&lt;, &gt;, &quot;, &apos;, &amp;</code>
           ইত্যাদি ক্যারেক্টারগুলো এইচটিএমএলের জন্য সংরক্ষিত। সাধারণ ক্যারেক্টারের মত লিখলে ব্রাউজারে তার আউটপুট তো আসবেই না, বরং এভাবে লেখার কারণে ফাইলটিই ভুলভাল আউটপুট প্রদর্শন করবে। তেমনিভাবে যে সকল সিম্বল সাইন কি-বোর্ডের মাধ্যমে ইনপুট দেয়া যায়না, সেসকল ক্যারেক্টার বা সিম্বলকে ব্রাউজারে আউটপুট দেয়ার উপায় কি?
         </p>
         <p> এসকল ক্যারেক্টার টেক্সট ফাইলে লিখতে হলে
-          <a href="https://dev.w3.org/html5/html-author/charref">ক্যারেক্টার রেফারেন্স</a>
+          <a href="https://dev.w3.org/html5/html-author/charref" title="w3 org's character reference">ক্যারেক্টার রেফারেন্স</a>
           ব্যবহার করতে হবে। ক্যারেক্টার রেফারেন্স
           <b>&</b> তথা
           <i>অ্যামপারস্যান্ড চিহ্ন</i>
           বা আমাদের কথ্য ভাষায় ইংরেজী
           <i>এন্ড চিহ্ন</i> দিয়ে শুরু হয় এবং সেমিকোলন
           <b>;</b> দিয়ে শেষ হয়। এইচটিএমএলের ভাষায় একে
-          <a href="https://developer.mozilla.org/en-US/docs/Glossary/Entity" target="_blank">এন্টিটি রেফারেন্স</a> বলা হয়।
+          <a href="https://developer.mozilla.org/en-US/docs/Glossary/Entity" target="_blank" title="MDN entity reference">এন্টিটি রেফারেন্স</a> বলা হয়।
         </p>
         <p>
           <strong>নোট:</strong> ডকুমেন্টের ক্যারেক্টার সেট
           <code>UTF-8</code> করা থাকলে মডার্ন ব্রাউজারগুলো এইচটিএমএলের জন্য সংরক্ষিত ক্যারেক্টারগুলো বাদে বাকিগুলোর ক্ষেত্রে ক্যারেক্টার বা এন্টিটি রেফারেন্স ছাড়াই কাজ করতে সক্ষম তথা ওই ক্যারেক্টার বা সিম্বল দেখাতে সক্ষম।
         </p>
-      </section><hr>
+        <hr>
+      </section>
 
       <!-- এইচটিএমএল কমেন্ট সেকশন -->
       <section>
         <h3>এইচটিএমএল কমেন্ট</h3>
-        <p> এইচটিএমএল ডকুমেন্ট কোড করার সময় ফাইলের বিভিন্ন জায়গায় প্রয়োজনমাফিক কমেন্ট করার সুযোগ আছে। এর মাধ্যমে কোন কোডটি কেন করা হয়েছে? কি উদ্দেশ্যে করা হয়েছে? ইত্যাদি বিবরণ লিখে রাখা যায়। ফলে ভবিষ্যতে কখনো কোডে হাত দেয়ার প্রয়োজন হলে বা অন্য কোন কোডারের সাথে ফাইলটা শেয়ার করলে উভয়ের জন্য প্রসঙ্গটা বোঝা সহজতর হয়। ব্রাউজার স্বেচ্ছায় ওয়েবসাইট দর্শকদের জন্য কমেন্টগুলোকে লুকিয়ে রাখে।</p>
+        <p>
+          এইচটিএমএল ডকুমেন্ট কোড করার সময় ফাইলের বিভিন্ন জায়গায় প্রয়োজনমাফিক কমেন্ট করার সুযোগ আছে। এর মাধ্যমে কোন কোডটি কেন করা হয়েছে? কি উদ্দেশ্যে করা হয়েছে? ইত্যাদি বিবরণ লিখে রাখা যায়। ফলে ভবিষ্যতে কখনো কোডে হাত দেয়ার প্রয়োজন হলে বা অন্য কোন কোডারের সাথে ফাইলটা শেয়ার করলে উভয়ের জন্য প্রসঙ্গটা বোঝা সহজতর হয়। ব্রাউজার স্বেচ্ছায় ওয়েবসাইট দর্শকদের জন্য কমেন্টগুলোকে লুকিয়ে রাখে।
+        </p>
         <dl>
           <dt>কমেন্ট করার প্রক্রিয়া:</dt>
           <dd>
             <code>&lt;&excl;--</code> এই অংশে কমেন্ট লিখতে হবে <code>--&gt;</code>
           </dd>
           <dt>উইন্ডোজ ব্যবহারকারীদের জন্য কি-বোর্ড শর্টকাট:</dt>
-          <dd><code>ctrl &plus; &sol;</code> <b>(ফরওয়ার্ড স্ল্যাশ কি)</b></dd>
+          <dd>
+            <code>ctrl &plus; &sol;</code>
+            <b>(ফরওয়ার্ড স্ল্যাশ কি)</b>
+          </dd>
         </dl>
-      </section><hr>
+        <hr>
+      </section>
 
       <h3>এইচটিএমএল বেসিক সারসংক্ষেপ</h3>
-      <p> এই পর্যন্ত আমরা এইচটিএমএল বেসিক লেভেলে দেখতে কেমন, কিভাবে কাজ করে, বেশ কিছু এলিমেন্ট এবং এট্রিবিউট যোগ করা ইত্যাদি শিখেছি। এই বিষয়ে আরো বিস্তারিত সামনে আসবে।</p>
-      <p>উপরে লিখিত কন্টেন্টগুলো মজিলা ডেভেলপার নেটওয়ার্কের
-        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">getting started with html</a> থেকে বাংলায় রূপান্তরিত করা হয়েছে।</p><hr>
-      <p>এর মাধ্যমে প্রথম গাইড সমাপ্ত হয়েছে। এখন থেকে দ্বিতীয় গাইড তথা <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML" target="_blank">what's in the head? metadata in html</a> শুরু হবে।
+      <p>
+        এই পর্যন্ত আমরা এইচটিএমএল বেসিক লেভেলে দেখতে কেমন, কিভাবে কাজ করে, বেশ কিছু এলিমেন্ট এবং এট্রিবিউট ইত্যাদি যোগ করা শিখেছি। এই বিষয়ে আরো বিস্তারিত সামনে আসবে।
+      </p>
+      <p>
+        উপরে লিখিত কন্টেন্টগুলো মজিলা ডেভেলপার নেটওয়ার্কের
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank" title="MDN getting started with html guide">getting started with html</a> থেকে বাংলায় রূপান্তরিত করা হয়েছে।
+      </p>
+      <p>
+        <strong>
+          এর মাধ্যমে প্রথম গাইড সমাপ্ত হয়েছে। এখন থেকে দ্বিতীয় গাইড তথা
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML" target="_blank" title="MDN what's in the head? metadata in html guide">what's in the head? metadata in html</a> শুরু হবে।
+        </strong>
       </p>
     </article>
   </main>
