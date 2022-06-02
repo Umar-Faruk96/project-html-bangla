@@ -558,21 +558,61 @@
       <p>
         এই সেকশনে হেড এলিমেন্ট ও এর ভেতরের এলিমেন্টগুলো নিয়ে যথেষ্ট আলোচনা হবে। 
       </p>
+      <hr>
 
       <!-- এইচটিএমএল হেড এলিমেন্ট কি এবং এর পরিচয়-পরিচিতি -->
       <h2>এইচটিএমএল হেড এলিমেন্ট পরিচয়</h2>
       <p>
-      এইচটিএমএল ডকুমেন্ট স্ট্রাকচার/অবকাঠামোর কথা মনে আছে?
-      <dl>
-        <dt> আরেকবার দেখি: </dt>
-        <dd>
-          <code>&lt;&excl;DOCTYPE html&gt;<br>&lt;html&gt;<br>&nbsp&lt;head&gt;<br>&nbsp&nbsp&lt;meta
+        এইচটিএমএল ডকুমেন্ট স্ট্রাকচার/অবকাঠামোর কথা মনে আছে?
+        <dl>
+          <dt> ডকুমেন্ট অবকাঠামো আরেকবার দেখি: </dt>
+          <dd>
+            <code>&lt;&excl;DOCTYPE html&gt;<br>&lt;html&gt;<br>&nbsp&lt;head&gt;<br>&nbsp&nbsp&lt;meta
             charset&equals;&quot;UTF-8&quot;&gt;<br>&nbsp&nbsp&nbsp&lt;title&gt;My test
             page&lt;&sol;title&gt;<br>&nbsp&lt;&sol;head&gt;<br>&nbsp;&lt;body&gt;<br>&nbsp;&nbsp;&lt;p&gt;This is
             my page&lt;&sol;p&gt;<br>&nbsp;&lt;&sol;body&gt;<br>&lt;&sol;html&gt;</code>
-        </dd>
-      </dl>
+          </dd>
+        </dl>
       </p>
+      <p>
+        এইচটিএমএল
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" title="MDN head element reference" target="_blank">
+          <code>&lt;head&gt;</code>
+        </a>এলিমেন্টে যেসকল কন্টেন্ট বা এলিমেন্ট ব্যবহার করা হয় সেগুলো পেজে প্রদর্শিত হয়না। বিপরীতে <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" title="MDN body element reference">
+          <code>&lt;body&gt;</code>
+        </a> এলিমেন্টের কন্টেন্টগুলো পেজে প্রদর্শিত হয়। হেড এলিমেন্টের কাজ কন্টেইনার বা পাত্র হিসেবে ডকুমেন্টের এমন সব মেটাডাটা ধারণ করা যা একটি ওয়েবসাইটকে পরিপূর্ণ ও সুন্দরভাবে ডেভলপারের ইচ্ছামত উপস্থাপন করার সুযোগ করে দেয়। উপরের উদাহরণে হেড এলিমেন্ট অংশটি খুবই ছোট।
+        <dl>
+          <dt>হেড অবকাঠামো:</dt>
+          <dd>
+            <code>&lt;head&gt;<br>&nbsp&nbsp&lt;meta charset&equals;&quot;UTF-8&quot;&gt;<br>&nbsp&nbsp&nbsp&lt;title&gt;My test page&lt;&sol;title&gt;<br>&nbsp&lt;&sol;head&gt;</code>
+          </dd>
+        </dl>
+        তবে প্রজেক্ট ফাইল বড় হওয়ার সাথে সাথে এটার সাইজ অনেক বড় হতে পারে। এই অংশে হেড এলিমেন্টের গুরুত্বপূর্ণ এলিমেন্ট বা কন্টেন্ট সম্পর্কে জানা যাবে যেগুলো কোড করতে গেলে নিয়মিত প্রয়োজন পড়বে। ওয়েবসাইটগুলোতে হেড এলিমেন্টের কি কি ধরনের কন্টেন্ট থাকে, কতটা সমৃদ্ধ থাকে এই এলিমেন্টটি- জানতে নির্দিষ্ট কোন ওয়েবসাইটে ঢুকে ব্রাউজারের ডেভলপার টুলের সাহায্যে তার হেড এলিমেন্ট অনুসন্ধান করুন এবং সরাসরি অভিজ্ঞতা গ্রহণ করুন। শুরু করা যাক:
+      </p>
+      <hr>
+
+      <!-- Page title adding -->
+      <h3>ডকুমেন্টে টাইটেল যোগ করা</h3>
+      <p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" title="MDN title element reference" target="_blank">
+          <code>&lt;title&gt;</code>
+        </a>
+        এলিমেন্টের ব্যবহার ইতিপূর্বেই এসে গেছে। এটি ডকুমেন্টের নাম নির্দেশ করার কাজে ব্যবহৃত হয়, যা ব্রাউজারের ট্যাবনেম হিসেবে দেখানো হয়। এটিকে
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" title="MDN h1 element reference">
+          <code>&lt;h1&gt;</code>
+        </a>
+        এলিমেন্টের সাথে গুলিয়ে ফেলা যাবেনা। যেটি বডি কন্টেন্টের প্রধান শিরোনাম হিসেবে ব্যবহৃত হয়, এবং একে কখনো কখনো পেজ টাইটেল হিসেবেও আখ্যায়িত করা হয়। তবে দুটি এলিমেন্ট সম্পূর্ণ আলাদা উদ্দেশ্য এবং কাজে ব্যবহৃত হয়।
+      </p>
+      <dl>
+        <dt>
+          যেমন:
+          <code>
+            &lt;h1&gt;
+          </code>
+        এলিমেন্ট
+        </dt>
+      </dl>
+      একদিকে যেমন 
     </section>
   </main>
 
